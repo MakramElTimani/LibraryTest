@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    background-color: #1D1B22;
+}
+a{
+    text-decoration: none;
+}
+input::focus{
+    outline: none;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.col-3{
+    padding: 0 10px;
+}
+
+.content{
+   height: calc(100vh - 55px);
+   padding: 46px 31px 0 110px;
+}
+
+.content .content-body{
+    padding-left: 47px;
+}
+
+.sidebar{
+    position:  fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    background-color: #26262E;
+    text-align: center;
+}
+
+.sidebar .logo-container{
+    margin-top: 37px;;
+}
+
+.sidebar .sidebar-item-listing{
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.sidebar .sidebar-item-listing li{
+    display: block;
+    margin: 38px 0;
+    color: #fff;
+    opacity: .35;
+}
+
+.sidebar .sidebar-item-listing li.selected{
+    opacity: 1;
+    border-right: 1px solid #7C7C7C;
+}
+
+.sidebar .sidebar-item-listing li a{
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.sidebar .sidebar-item-listing li a img{
+    display: inline-block;
+    width: auto;
+}
+.sidebar .sidebar-item-listing li a span{
+    display: block;
+    margin-top: 17px;
+    text-transform: uppercase;
+}
+
+.sidebar .sidebar-actions-container{
+    position: absolute;
+    bottom: 21px;
+    right: 0;
+    left: 0;
+    border: .5px solid rgba(114, 114, 114, .7);
+    width: 70px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 22px 0 14px 0;
+}
+
+.sidebar .sidebar-actions-container .siderbar-3-dots{
+    margin-bottom: 37px;
+}
+
+.sidebar .sidebar-actions-container .siderbar-initals-container{
+    background-color: #5E1498;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+
+.header{
+    width: 100px;
+    padding-bottom: 10px ;
+    width: 100%;
+    position: relative;
+    border-bottom: 3px solid rgba(216, 216, 216, .01);
+    margin-bottom: 40px;
+}
+
+.header .search-container{
+    width: calc(100% - 121px);
+    display: inline-block;
+    position: relative;
+}
+
+.search-container img{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%);
+}
+.search-container input{
+    background-color: transparent;
+    border: none;
+    padding-left: 30px;
+    font-size: 18px;
+    width: 100%;
+    user-select: none;
+    outline: none;
+    color: white;
+}
+
+.header .upload-btn-container{
+    display: inline-block;
+    width: 116px;
+    text-align: right;
+}
+
+.folder-container .folder-header{
+    margin-bottom: 31px;;
+}
+.folder-container .folder-header .folder-actions{
+    width: 250px;
+    text-align: right;
+    display: inline-block;
+}
+.folder-container .folder-header .folder-main{
+    position: relative;
+    width: calc(100% - 255px);
+    display: inline-block;
+}
+
+.folder-container .folder-header .folder-main a{
+    font-size: 18px;
+    color: rgba(255, 255, 255, .45);
+}
+.folder-container .folder-header .folder-main a img{
+    margin-left: 12px;
+}
+
+.folder-container .folder-listing{
+    /* margin: 0 -10px; */
+    margin-bottom: 57px;
+}
+
+.folder-container .folder-listing .folder{
+    padding: 16.5px 16px;
+    border-radius: 10px;
+    background-color: #26262E;
+    font-size: 14px;
+    order: 1;
+    color: #C4C4C4;
+    margin: 10px;
+}
+
+.folder img{
+    width: 30px;
+    margin-right: 29px;
+}
+
+.video-listing.row{
+    margin: 0 -10px;
+    padding-bottom: 55px;
+}
+
+.video-listing .video-card{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #26262E;
+    margin-bottom: 17px;;
+}
+.video-listing .video-card.selected{
+    background-color: #333339;   
+}
+.video-listing .video-card .image-container{
+    position: relative;
+}
+.video-listing .video-card .image-container img{
+    width: 100%;
+}
+.video-listing .video-card .image-container .image-actions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.video-listing .video-card .image-container .image-actions img{
+    width: 16px;
+}
+.video-listing .video-card .image-container .image-actions .check{
+    position: absolute;
+    top: 26px;
+    left: 26px;
+}
+.video-listing .video-card .image-container .image-actions .star{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.video-listing .video-card .image-container .image-actions .time{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 7px 10px;
+    border-radius: 6px;;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    background: rgba(0, 0, 0, 0.499809);
+    /* border: 1px solid #979797 */
+}
+
+.video-listing .video-card .video-card-contents{
+    padding: 0 25px;
+}
+.video-listing .video-card .video-card-contents .card-title{
+    padding: 20px 0 25px 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);;
+}
+
+.video-listing .video-card .video-card-contents .card-description{
+    padding: 32px 0 28px 0;
+}
+.video-listing .video-card .video-card-contents .card-description .subtitle{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.video-listing .video-card .video-card-contents .card-description .subtitle span{
+    width: calc(100% - 100px);
+}
+.video-listing .video-card .video-card-contents .card-description .subtitle a{
+    padding: 6px;
+    margin: 4px;
+}
+
+
+
+.button{
+    padding: 10px 16px;
+    border: none;
+    user-select: none;
+    background-color: #26262E;
+    border-radius: 8px;
+    color: rgba(255,255,255, .4);
+    line-height: 30px;
+}
+
+.button.button-large{
+    padding: 10px 29px;
+    letter-spacing: 0.186667px;
+}
+
+.button.button-primary{
+    background-color: #3096F5;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    letter-spacing: 0.186667px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+}
+
+.button img{
+    margin-left: 16px;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.f-13{
+    font-size: 13px;
+}
+.f-14{
+    font-size: 14px;
+}
+.ml-16{
+    margin-left: 16px;
+}
